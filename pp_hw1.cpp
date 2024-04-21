@@ -52,8 +52,6 @@ int Read_Input(char* input_path, map<int, ItemsetInfo>& initial_itemsetInfo_map)
 				initial_itemsetInfo_map[item_id].itemIds.push_back(item_id);
 			initial_itemsetInfo_map[item_id].appearancesInTransactions.push_back(rowId);
 		}
-		
-		// check if sorted
 
 		transactions.push_back(transaction);
 		rowId++;
